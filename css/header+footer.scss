@@ -1,0 +1,201 @@
+$font-open: 'Open Sans', sans-serif;
+$font-PT: 'PT Sans', sans-serif;
+$head-color: #003363;
+$head-color-hover: #024585;
+$text-main: 13px;
+$text-title: 18px;
+
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+.main-nav {
+  background: $head-color;
+  position: relative;
+  border-bottom: 4px solid #cbcbcb;
+
+  .logo {
+    position: absolute;
+    left: -30px;
+  }
+
+  .nav {
+    margin-bottom: 44px;
+  }
+
+  ul {
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 7px;
+
+
+    li {
+      text-transform: uppercase;
+      text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.25), 0.5px 0.9px 0 rgba(255, 255, 255, 0.3);
+      font-family: $font-open;
+      font-size: $text-title;
+      font-weight: 300;
+      line-height: 55px;
+      letter-spacing: normal;
+      text-align: left;
+
+      .nav-link {
+        margin-top: 8px;
+        color: #ffffff;
+        padding: 0;
+
+        &:hover {
+          color: #dbdbdb;
+          background-color: $head-color-hover;
+        }
+      }
+    }
+  }
+
+  form {
+    input[type="search"] {
+      -webkit-appearance: none;
+    }
+
+    position: absolute;
+    right: 15px;
+    top: 77px;
+    max-width: 198px;
+    border: solid 1px;
+    max-height: 30px;
+
+    input:nth-child(1) {
+      width: 100%;
+      border: none;
+      padding: 6px 33px 6px 10px;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font: $text-main, $font-open;
+      outline: none;
+
+      &:focus {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+        //background: #E8E8E8;
+        color: #333;
+      }
+    }
+
+    input:nth-child(2) {
+      position: absolute;
+      right: 0;
+      height: 106%;
+      width: 33px;
+      background: #ffffff;
+      background: url("../images/search.png") 50% no-repeat;
+      border: none;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+footer {
+  padding-bottom: 23px;
+
+  .footer-nav {
+    background: $head-color;
+    //padding: 16px 0;
+    margin-top: 86px;
+    border-bottom: 4px solid #cbcbcb;
+    margin-bottom: 19px;
+
+    li {
+      font: $text-title, $font-open;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 43px;
+
+      .nav-link {
+        //margin-top: 8px;
+        color: #ffffff;
+        padding: 0;
+
+        &:hover {
+          color: #dbdbdb;
+          background-color: $head-color-hover;
+        }
+      }
+    }
+  }
+
+  .feedback {
+    p {
+      font-size: $text-main;
+      color: #666666;
+      margin-bottom: 15px;
+      font-family: $font-PT;
+    }
+
+    i {
+      color: #b2b2b2;
+      font-size: $text-main;
+      margin-right: 6px;
+    }
+
+    a {
+      font-size: $text-main;
+      color: #224e7a;
+    }
+  }
+
+  .contacts {
+    p:nth-child(1) {
+      font-family: $font-PT;
+      font-size: 15px;
+      margin-top: 3px;
+      margin-bottom: 13px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    p:nth-child(2) {
+      font-family: $font-PT;
+      font-size: $text-main;
+    }
+  }
+}
+
+//Описаны теги + комментарии
+.tags {
+  a {
+    padding: 4px 5px 4px 4px;
+    text-decoration: none;
+    font-family: $font-PT;
+    font-size: $text-main;
+    color: #ffffff;
+  }
+
+  .nature {
+    background-color: #6db33f;
+  }
+
+  .eyewitness {
+    background-color: #003366;
+  }
+
+  .politics {
+    background-color: #e7252c;
+  }
+
+  .Incidents {
+    background-color: #41b2dc;
+
+  }
+}
+
+.comments {
+  font-family: $font-PT;
+  font-size: $text-main;
+}

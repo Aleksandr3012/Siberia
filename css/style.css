@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.main-nav {
+  background: #003363;
+  position: relative;
+  border-bottom: 4px solid #cbcbcb; }
+  .main-nav .logo {
+    position: absolute;
+    left: -30px; }
+  .main-nav .nav {
+    margin-bottom: 44px; }
+  .main-nav ul {
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 7px; }
+    .main-nav ul li {
+      text-transform: uppercase;
+      text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.25), 0.5px 0.9px 0 rgba(255, 255, 255, 0.3);
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 55px;
+      letter-spacing: normal;
+      text-align: left; }
+      .main-nav ul li .nav-link {
+        margin-top: 8px;
+        color: #ffffff;
+        padding: 0; }
+        .main-nav ul li .nav-link:hover {
+          color: #dbdbdb;
+          background-color: #024585; }
+  .main-nav form {
+    position: absolute;
+    right: 15px;
+    top: 77px;
+    max-width: 198px;
+    border: solid 1px;
+    max-height: 30px; }
+    .main-nav form input[type="search"] {
+      -webkit-appearance: none; }
+    .main-nav form input:nth-child(1) {
+      width: 100%;
+      border: none;
+      padding: 6px 33px 6px 10px;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font: 13px, "Open Sans", sans-serif;
+      outline: none; }
+      .main-nav form input:nth-child(1):focus {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+        color: #333; }
+    .main-nav form input:nth-child(2) {
+      position: absolute;
+      right: 0;
+      height: 106%;
+      width: 33px;
+      background: #ffffff;
+      background: url("../images/search.png") 50% no-repeat;
+      border: none;
+      opacity: 0.5; }
+      .main-nav form input:nth-child(2):hover {
+        opacity: 0.8; }
+
+footer {
+  padding-bottom: 23px; }
+  footer .footer-nav {
+    background: #003363;
+    margin-top: 86px;
+    border-bottom: 4px solid #cbcbcb;
+    margin-bottom: 19px; }
+    footer .footer-nav li {
+      font: 18px, "Open Sans", sans-serif;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 43px; }
+      footer .footer-nav li .nav-link {
+        color: #ffffff;
+        padding: 0; }
+        footer .footer-nav li .nav-link:hover {
+          color: #dbdbdb;
+          background-color: #024585; }
+  footer .feedback p {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 15px;
+    font-family: "PT Sans", sans-serif; }
+  footer .feedback i {
+    color: #b2b2b2;
+    font-size: 13px;
+    margin-right: 6px; }
+  footer .feedback a {
+    font-size: 13px;
+    color: #224e7a; }
+  footer .contacts p:nth-child(1) {
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: 13px; }
+    footer .contacts p:nth-child(1) span {
+      font-weight: 600; }
+  footer .contacts p:nth-child(2) {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px; }
+
+.tags a {
+  padding: 4px 5px 4px 4px;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  color: #ffffff; }
+.tags .nature {
+  background-color: #6db33f; }
+.tags .eyewitness {
+  background-color: #003366; }
+.tags .politics {
+  background-color: #e7252c; }
+.tags .Incidents {
+  background-color: #41b2dc; }
+
+.comments {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px; }
+
+header {
+  position: relative;
+  background-image: url("../images/Iceland9.png");
+  padding-top: 621px;
+  background-size: cover; }
+  header img {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+  header p {
+    text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.5);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 2.22;
+    color: #000000;
+    position: absolute;
+    bottom: 18px; }
+    header p span {
+      text-transform: uppercase; }
+
+.main-article {
+  margin: 34px 0 25px; }
+  .main-article h2 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 11px; }
+  .main-article p {
+    font-size: 13px;
+    font-family: "PT Sans", sans-serif;
+    margin-bottom: 11px;
+    line-height: 1.38;
+    color: #333333; }
+
+/*# sourceMappingURL=style.css.map */
