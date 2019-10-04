@@ -2,18 +2,19 @@
 @import "header+footer";
 
 
-
 header {
   position: relative;
   background-image: url("../images/Iceland9.png");
   padding-top: 621px;
   background-size: cover;
+
   img {
     position: absolute;
     bottom: 0;
     width: 100%;
   }
-  p{
+
+  p {
     text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.5);
     font-family: $font-open;
     font-size: 18px;
@@ -21,26 +22,114 @@ header {
     color: #000000;
     position: absolute;
     bottom: 18px;
+
     span {
       text-transform: uppercase;
     }
   }
 }
 
-.main-article {
-  margin: 34px 0 25px;
-  h2 {
-    font-family: $font-PT;
-    font-weight: bold;
-    font-size: 35px;
-    margin-bottom: 11px;
+.articles {
+  .main-article {
+    margin: 34px 0 25px;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      font-family: $font-PT;
+      font-weight: bold;
+      font-size: 35px;
+      margin-bottom: 11px;
+    }
+
+    p {
+      font-size: $text-main;
+      font-family: $font-PT;
+      margin-bottom: 11px;
+      line-height: 1.38;
+      color: #333333;
+    }
   }
-  p {
-    font-size: $text-main;
+
+  .authors {
+    margin-top: 34px;
+    position: relative;
+    border-left: solid 1px #999999;
+    padding: 0;
+    margin-left: 5px;
     font-family: $font-PT;
-    margin-bottom: 11px;
-    line-height: 1.38;
-    color: #333333;
+    border-bottom: 4px solid $head-color;
+
+    h2 {
+      display: block;
+      border-top: 1px solid $head-color;
+      border-left: 1px solid $head-color;
+      border-bottom: 4px solid $head-color;
+      background-color: #e31e24;
+      padding: 10px 0 8px 21px;
+      color: #ffffff;
+      //margin-bottom: 20px;
+      font-size: $text-title;
+    }
+
+    article {
+      border-bottom: solid 1px #999999;
+      padding: 20px;
+      img {
+
+      }
+      h3 {
+        font-family: $font-PT;
+        font-style: italic;
+        color: #003366;
+        //text-align: left;
+        font-size: 15px;
+      }
+
+      h4 {
+        line-height: 31px;
+        font-size: $text-title;
+        font-weight: bold;
+        //text-align: left;
+
+      }
+
+      p {
+        line-height: 24px;
+        font-size: $text-main;
+        color: #333333;
+      }
+    }
+  }
+  .second-article {
+    width: 47.5%;
+    display: inline-block;
+    margin-right: 20px;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-family: $font-PT;
+      font-size: $text-title;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+  .third-article {
+    width: 47.5%;
+    display: inline-block;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-family: $font-PT;
+      font-size: $text-title;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
   }
 }
-

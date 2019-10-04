@@ -169,6 +169,9 @@ footer {
 
 //Описаны теги + комментарии
 .tags {
+  display: inline-block;
+  margin-right: 12px;
+
   a {
     padding: 4px 5px 4px 4px;
     text-decoration: none;
@@ -198,4 +201,6 @@ footer {
 .comments {
   font-family: $font-PT;
   font-size: $text-main;
+  display: inline-block;
+  color: #666666;
 }

@@ -146,24 +146,29 @@ footer {
     font-family: "PT Sans", sans-serif;
     font-size: 13px; }
 
-.tags a {
-  padding: 4px 5px 4px 4px;
-  text-decoration: none;
-  font-family: "PT Sans", sans-serif;
-  font-size: 13px;
-  color: #ffffff; }
-.tags .nature {
-  background-color: #6db33f; }
-.tags .eyewitness {
-  background-color: #003366; }
-.tags .politics {
-  background-color: #e7252c; }
-.tags .Incidents {
-  background-color: #41b2dc; }
+.tags {
+  display: inline-block;
+  margin-right: 12px; }
+  .tags a {
+    padding: 4px 5px 4px 4px;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    color: #ffffff; }
+  .tags .nature {
+    background-color: #6db33f; }
+  .tags .eyewitness {
+    background-color: #003366; }
+  .tags .politics {
+    background-color: #e7252c; }
+  .tags .Incidents {
+    background-color: #41b2dc; }
 
 .comments {
   font-family: "PT Sans", sans-serif;
-  font-size: 13px; }
+  font-size: 13px;
+  display: inline-block;
+  color: #666666; }
 
 header {
   position: relative;
@@ -185,18 +190,76 @@ header {
     header p span {
       text-transform: uppercase; }
 
-.main-article {
+.articles .main-article {
   margin: 34px 0 25px; }
-  .main-article h2 {
+  .articles .main-article img {
+    width: 100%; }
+  .articles .main-article h2 {
     font-family: "PT Sans", sans-serif;
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 11px; }
-  .main-article p {
+  .articles .main-article p {
     font-size: 13px;
     font-family: "PT Sans", sans-serif;
     margin-bottom: 11px;
     line-height: 1.38;
     color: #333333; }
+.articles .authors {
+  margin-top: 34px;
+  position: relative;
+  border-left: solid 1px #999999;
+  padding: 0;
+  margin-left: 5px;
+  font-family: "PT Sans", sans-serif;
+  border-bottom: 4px solid #003363; }
+  .articles .authors h2 {
+    display: block;
+    border-top: 1px solid #003363;
+    border-left: 1px solid #003363;
+    border-bottom: 4px solid #003363;
+    background-color: #e31e24;
+    padding: 10px 0 8px 21px;
+    color: #ffffff;
+    font-size: 18px; }
+  .articles .authors article {
+    border-bottom: solid 1px #999999;
+    padding: 20px; }
+    .articles .authors article h3 {
+      font-family: "PT Sans", sans-serif;
+      font-style: italic;
+      color: #003366;
+      font-size: 15px; }
+    .articles .authors article h4 {
+      line-height: 31px;
+      font-size: 18px;
+      font-weight: bold; }
+    .articles .authors article p {
+      line-height: 24px;
+      font-size: 13px;
+      color: #333333; }
+.articles .second-article {
+  width: 47.5%;
+  display: inline-block;
+  margin-right: 20px; }
+  .articles .second-article img {
+    width: 100%;
+    margin-bottom: 10px; }
+  .articles .second-article h2 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px; }
+.articles .third-article {
+  width: 47.5%;
+  display: inline-block; }
+  .articles .third-article img {
+    width: 100%;
+    margin-bottom: 10px; }
+  .articles .third-article h2 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px; }
 
 /*# sourceMappingURL=style.css.map */
