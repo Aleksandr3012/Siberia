@@ -132,4 +132,51 @@ header {
       margin-bottom: 8px;
     }
   }
+  .photo {
+    margin-top: 22px;
+    .photo-stream {
+      justify-content: space-between;
+      padding: 4px 0;
+      margin-right: 16px;
+      border-top: solid 1px $head-color;
+      border-bottom: solid 4px $head-color;
+      h1 {
+        font-family: $font-PT;
+        font-size: 40px;
+        color: $head-color;
+        font-weight: bold;
+        display: inline;
+      }
+      button {
+        padding: 10px 16px;
+        background-color: $head-color;
+        font-family: $font-PT;
+        font-size: $text-title;
+        border: none;
+        border-radius: 1px;
+        color: #ffffff;
+        margin-top: 1px;
+      }
+    }
+    h4 {
+      font-size: $text-main;
+      font-weight: $font-PT;
+      color: #333333;
+      margin: 14px 0 17px;
+    }
+    .single-photo {
+      width: 32.5%;
+      display: inline-block;
+      img {
+        width: 100%;
+        margin-bottom: 12px;
+      }
+      p {
+        margin-bottom: 16px;
+        font-family: $font-PT;
+        font-size: 14px;
+        color: $head-color;
+      }
+    }
+  }
 }
