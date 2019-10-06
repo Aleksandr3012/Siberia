@@ -167,6 +167,7 @@ footer {
   }
 }
 
+
 //Описаны теги + комментарии
 .tags {
   display: inline-block;
@@ -203,4 +204,62 @@ footer {
   font-size: $text-main;
   display: inline-block;
   color: #666666;
+}
+
+//Описаны ссылки на соц сети
+.social {
+  a {
+    margin-right: 12px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  .fab {
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .fa-twitter {
+    background: #598dca;
+
+    &:hover {
+      background: #959595;
+    }
+  }
+
+  .fa-facebook-f {
+    background: #3a589b;
+
+    &:hover {
+      background: #626262;
+    }
+  }
+
+  .fa-youtube {
+    background: #cf3427;
+
+    &:hover {
+      background: #767676;
+    }
+  }
+
+  .fa-vimeo-v {
+    background: #41b2dc;
+
+    &:hover {
+      background: #9d9d9d;
+    }
+  }
+
+  .fa-flickr {
+    background: #ed1983;
+
+    &:hover {
+      background: #767676;
+    }
+  }
 }

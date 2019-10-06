@@ -15,7 +15,7 @@ header {
   }
 
   p {
-    text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     font-family: $font-open;
     font-size: 18px;
     line-height: 2.22;
@@ -77,9 +77,11 @@ header {
     article {
       border-bottom: solid 1px #999999;
       padding: 20px;
+
       img {
 
       }
+
       h3 {
         font-family: $font-PT;
         font-style: italic;
@@ -103,14 +105,17 @@ header {
       }
     }
   }
+
   .second-article {
     width: 47.5%;
     display: inline-block;
     margin-right: 20px;
+
     img {
       width: 100%;
       margin-bottom: 10px;
     }
+
     h2 {
       font-family: $font-PT;
       font-size: $text-title;
@@ -118,13 +123,16 @@ header {
       margin-bottom: 8px;
     }
   }
+
   .third-article {
     width: 47.5%;
     display: inline-block;
+
     img {
       width: 100%;
       margin-bottom: 10px;
     }
+
     h2 {
       font-family: $font-PT;
       font-size: $text-title;
@@ -132,14 +140,37 @@ header {
       margin-bottom: 8px;
     }
   }
+
+  .sidebar {
+    padding: 0;
+    max-width: 24.5%;
+
+    .social {
+      background: url("../images/Shape 13.png");
+      padding: 20px 0 10px 20px;
+
+      p {
+        font-size: $text-main;
+        font-family: $font-PT;
+        color: #666666;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+
   .photo {
+    padding-left: 0;
+    padding-right: 0;
     margin-top: 22px;
+
     .photo-stream {
       justify-content: space-between;
       padding: 4px 0;
       margin-right: 16px;
       border-top: solid 1px $head-color;
       border-bottom: solid 4px $head-color;
+
       h1 {
         font-family: $font-PT;
         font-size: 40px;
@@ -147,6 +178,7 @@ header {
         font-weight: bold;
         display: inline;
       }
+
       button {
         padding: 10px 16px;
         background-color: $head-color;
@@ -158,19 +190,23 @@ header {
         margin-top: 1px;
       }
     }
+
     h4 {
       font-size: $text-main;
       font-weight: $font-PT;
       color: #333333;
       margin: 14px 0 17px;
     }
+
     .single-photo {
       width: 32.5%;
       display: inline-block;
+
       img {
         width: 100%;
         margin-bottom: 12px;
       }
+
       p {
         margin-bottom: 16px;
         font-family: $font-PT;
