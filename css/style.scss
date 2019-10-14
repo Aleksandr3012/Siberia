@@ -144,16 +144,87 @@ header {
   .sidebar {
     padding: 0;
     max-width: 24.5%;
+    position: fixed;
+    right: 2%;
 
     .social {
-      background: url("../images/Shape 13.png");
+      background: #8f8f8f;
+      background: linear-gradient(to right, #e6e6e6, #ffffff);
       padding: 20px 0 10px 20px;
+      &:after {
+        width: 100%;
+        position: absolute;
+        content: "";
+        height: 4px;
+        background: linear-gradient(30deg, #d2d2d2, #ffffff);
+        left: 0;
+        top: 75px;
+      }
 
       p {
         font-size: $text-main;
         font-family: $font-PT;
         color: #666666;
         padding-bottom: 5px;
+      }
+    }
+    .contest {
+      margin: 41px 0 20px 20px;
+      .main-contest {
+        padding-bottom: 20px;
+        border-bottom: solid 1px #999999;
+      }
+    }
+    .store {
+      margin-left: 20px;
+      h2 {
+        font-family: $font-PT;
+        font-size: $text-title;
+        font-weight: bold;
+        position: relative;
+        margin-left: 61px;
+        margin-bottom: 18px;
+        &:after {
+          content: "";
+          position: absolute;
+          background-image: url("../images/Layer 2 copy 6.png");
+          background-position: left;
+          width: 21px;
+          height: 7px;
+          left: -28px;
+          top: 37%;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          background-image: url("../images/Layer 2 copy 6.png");
+          background-position: left;
+          width: 21px;
+          height: 7px;
+          left: 72px;
+          top: 37%;
+          transform: scale(-1, 1)
+        }
+      }
+      p {
+        font-family: $font-PT;
+        font-size: $text-main;
+        color: #333333;
+        line-height: 1.23;
+        font-style: italic;
+        text-align: center;
+        max-width: 187px;
+        padding-bottom: 25px;
+        margin-bottom: 34px;
+        border-bottom: solid 1px #999999;
+      }
+    }
+    .advertising {
+      a {
+        img {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
