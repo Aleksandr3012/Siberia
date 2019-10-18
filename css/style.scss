@@ -30,6 +30,8 @@ header {
 }
 
 .articles {
+  position: relative;
+
   .main-article {
     margin: 34px 0 25px;
 
@@ -144,13 +146,14 @@ header {
   .sidebar {
     padding: 0;
     max-width: 24.5%;
-    position: fixed;
-    right: 2%;
+    float: left;
+    //right: 179px;
 
     .social {
       background: #8f8f8f;
       background: linear-gradient(to right, #e6e6e6, #ffffff);
       padding: 20px 0 10px 20px;
+
       &:after {
         width: 100%;
         position: absolute;
@@ -168,15 +171,19 @@ header {
         padding-bottom: 5px;
       }
     }
+
     .contest {
       margin: 41px 0 20px 20px;
+
       .main-contest {
         padding-bottom: 20px;
         border-bottom: solid 1px #999999;
       }
     }
+
     .store {
       margin-left: 20px;
+
       h2 {
         font-family: $font-PT;
         font-size: $text-title;
@@ -184,6 +191,7 @@ header {
         position: relative;
         margin-left: 61px;
         margin-bottom: 18px;
+
         &:after {
           content: "";
           position: absolute;
@@ -194,6 +202,7 @@ header {
           left: -28px;
           top: 37%;
         }
+
         &:before {
           content: "";
           position: absolute;
@@ -206,6 +215,7 @@ header {
           transform: scale(-1, 1)
         }
       }
+
       p {
         font-family: $font-PT;
         font-size: $text-main;
@@ -219,13 +229,10 @@ header {
         border-bottom: solid 1px #999999;
       }
     }
-    .advertising {
-      a {
-        img {
-          width: 20px;
-          height: 20px;
-        }
-      }
+
+    .MTS {
+      margin-bottom: 32px;
+      margin-left: 20px;
     }
   }
 
